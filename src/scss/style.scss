@@ -7,6 +7,7 @@ html {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    font-size: 10px;
 }
 
 .wrapper {
@@ -16,6 +17,7 @@ html {
 .sidenav {
     background-color: rgb(31, 36, 40);
     width: 10vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,10 +38,9 @@ html {
         flex-direction: column;
         color: #787878;
         font-family: 'Libre Franklin', sans-serif;
-        font-size: 0.875rem;
+        font-size: 1.26rem;
         font-weight: 400;
-        letter-spacing: -0.0281rem;
-        margin: 1rem;
+        margin: 1.5rem;
         text-align: center;
     }
 }
@@ -95,15 +96,15 @@ html {
 }
 
 .button {
-    border: 0.125rem solid #cccccc;
-    border-radius: 1.5625rem 1.5625rem 1.5625rem 1.5625rem;
+    border: 0.1rem solid #cccccc;
+    border-radius: 1.7rem;
     font-family: 'Libre Franklin', sans-serif;
     cursor: pointer;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem;
+    padding-right: 1.625rem;
+    padding-left: 1.625rem;
     margin: 1rem 0.55rem 0.9rem 0.55rem;
-    line-height: 2.5875rem;
-    font-size: 0.875rem;
+    line-height: 5rem;
+    font-size: 1.6rem;
     display: flex;
     &:hover {
         background: salmon;
@@ -125,28 +126,28 @@ html {
         font-family: 'Libre Franklin', sans-serif;
         text-align: center;
         cursor: pointer;
-        border-right: 0.0625rem solid #cccccc;
-        font-size: 0.875rem;
+        border-right: 0.1rem solid #cccccc;
+        font-size: 1.7rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         background-color: #f8f8f8;
-        padding: 1.25rem 1.875rem;
+        padding: 2.25rem 3.875rem;
     }
     .clock {
-        margin-top: -0.525rem;
+        margin-top: -0.5rem;
     }
     .telegram {
-        margin-top: -0.175rem;
+        margin-top: -0.2rem;
     }
 }
 
 .search {
-    padding: 0.46875rem 0.9375rem;
-    max-width: 17.5rem;
-    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    max-width: 20rem;
+    font-size: 1.6rem;
     cursor: text;
-    margin: 0.9rem 1.6rem 0rem 0rem;
+    margin: 0.9rem 1.6rem 1rem 0rem;
     border: 1px solid transparent;
     background: transparent;
     border-radius: 1.25rem;
@@ -170,12 +171,12 @@ html {
     border: 1px solid #dedede;
     background-color: #fff;
     font-family: 'Libre Franklin', sans-serif;
-    padding: 0.625rem;
+    padding: 1.3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0rem -0.0625rem -0.0625rem 0rem;
+    margin: 0rem -1rem 0rem -0.5rem;
     &::after {
         content: "";
         clear: both;
@@ -185,17 +186,17 @@ html {
 
 .percentage {
     background: #ff503f;
-    border-radius: 0.1875rem;
+    border-radius: 1.2rem;
     text-align: center;
-    line-height: 2.1875rem;
+    line-height: 3rem;
     color: #cccccc;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 1.0625rem;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem 0.3rem 0.8rem;
 }
 
 .task {
-    font-size: 0.875rem;
+    font-size: 1.7rem;
     font-family: 'Libre Franklin', sans-serif;
     margin: 1rem;
     flex: 1;
@@ -206,13 +207,13 @@ html {
 
 .some-button {
     border: 0.125rem solid #cccccc;
-    border-radius: 1.5625rem 1.5625rem 1.5625rem 1.5625rem;
+    border-radius: 1.5625rem;
     font-family: 'Libre Franklin', sans-serif;
     text-align: center;
     cursor: pointer;
-    line-height: 2.1875rem;
-    font-size: 0.875rem;
-    padding: 0rem 0.3rem 0rem 0.3rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
     &:hover {
         background: salmon;
         transition: 0.6s;
@@ -230,7 +231,7 @@ html {
 }
 
 .task-opened {
-    font-size: 0.875rem;
+    font-size: 1.7rem;
     margin: 1rem;
     flex: 1;
     flex-grow: 1;
@@ -244,21 +245,28 @@ html {
     padding: 0rem 0.625rem 0rem 0.625rem;
 }
 
+// .other-profiles-online{
+//     font-size: 4.7rem;
+//     color: #6d6d6d;
+//     text-decoration: none;
+// }
+
 .messenge-wrapper {
-    width: 24vw;
+    width: 26vw;
     border: 0.0325rem solid #dedede;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     background-color: #fff;
     font-family: 'Libre Franklin', sans-serif;
-    padding: 0.625rem;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.time-left {
+.time-right {
     color: #999;
+    font-size: 1.4rem;
 }
 
 .two-colums {
@@ -277,7 +285,7 @@ html {
 }
 
 .two-col {
-    border: 0.0625rem solid #ccc;
+    border: 0.1rem solid #ccc;
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
     margin-left: 2.1875rem;
     background: #fff;
@@ -290,12 +298,12 @@ html {
 .first-scroll {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 41.875rem;
+    height: 77rem;
 }
 
 .second-scroll {
     overflow-y: scroll;
-    height: 48.125rem;
+    height: 81rem;
 }
 
 .fa-plus-circle {
@@ -304,13 +312,22 @@ html {
 }
 
 i {
-    margin: 0.625rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
     color: rgba(0, 0, 0, 0.35);
     size: 140%;
 }
 
+.fa-comments {
+    margin: 1.4rem 1rem 0rem -1rem;
+}
+
+.fa-chevron-down {
+    margin: 1.4rem -1rem 0rem 0.5rem;
+}
+
 p {
     width: 15vw;
+    font-size: 1.4rem;
 }
 
 .wrapper-green-dot {
@@ -325,7 +342,7 @@ p {
         font-size: 0.375rem;
         top: 0rem;
         right: 0rem;
-        padding: 0.0625rem 0.25rem;
+        padding: 0.1rem 0.3rem;
         border-radius: 50%;
         background: rgb(69, 236, 28);
         color: rgb(69, 236, 28);
